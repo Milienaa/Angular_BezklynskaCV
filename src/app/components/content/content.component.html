@@ -1,23 +1,33 @@
 <div class="content">
+    <ng-container *ngTemplateOutlet="aboutTemplate"></ng-container>
+    <ng-container *ngTemplateOutlet="educationTemplate"></ng-container>
+    <ng-container *ngTemplateOutlet="experienceTemplate"></ng-container>
+</div>
+
+<ng-template #aboutTemplate>
     <div class="about">
         <h3>About me</h3>
-        <p class="bth__date">
-            {{about.birth}}
-        </p>
-        <p>{{about.text}}</p>
+        <p class="bth__date">{{ about.birth }}</p>
+        <p>{{ about.text }}</p>
     </div>
+</ng-template>
+
+<ng-template #educationTemplate>
     <div class="education">
         <h3>Education</h3>
-        <p>{{education[0]}}</p>
-        <p class="date">{{education[1]}}</p>
-        <p>{{education[2]}}</p>
-        <p>{{education[3]}}</p>
-        <p class="date">{{education[4]}}</p>
+        <p>{{ education[0] }}</p>
+        <p class="date">{{ education[1] }}</p>
+        <p>{{ education[2] }}</p>
+        <p>{{ education[3] }}</p>
+        <p class="date">{{ education[4] }}</p>
     </div>
+</ng-template>
+
+<ng-template #experienceTemplate>
     <div class="experience">
         <h3>Work Experience</h3>
-        <h4>{{experience[0]}}</h4>
-        <p class="date">{{experience[1]}}</p>
-        <p>{{experience[2]}} <br> {{experience[3]}} <br> {{experience[4]}} <br> {{experience[5]}}</p>
+        <h4>{{ experience[0] }}</h4>
+        <p class="date">{{ experience[1] }}</p>
+        <p>{{ experience[2] }} <br> {{ experience[3] }} <br> {{ experience[4] }} <br> {{ experience[5] }}</p>
     </div>
-</div>
+</ng-template>

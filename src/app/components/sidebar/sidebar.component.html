@@ -1,20 +1,32 @@
 <div class="sidebar">
+    <ng-container *ngTemplateOutlet="contactTemplate"></ng-container>
+    <ng-container *ngTemplateOutlet="skillsTemplate"></ng-container>
+    <ng-container *ngTemplateOutlet="languagesTemplate"></ng-container>
+</div>
+
+<ng-template #contactTemplate>
     <div class="contact">
         <h3>Contact</h3>
         <ul class="contact__menu">
             <li *ngFor="let item of contact"><a href="{{item.src}}">{{item.text}}</a></li>
         </ul>
     </div>
+</ng-template>
+
+<ng-template #skillsTemplate>
     <div class="skills">
         <h3>Skills</h3>
         <ul class="skills__menu">
             <li *ngFor="let item of skills"><a href="#">{{item}}</a></li>
         </ul>
     </div>
+</ng-template>
+
+<ng-template #languagesTemplate>
     <div class="languages">
         <h3>Languages</h3>
         <ul class="languages__menu">
-            <li *ngFor="let item of languages">{{item}}<a href="#"></a></li>
+            <li *ngFor="let item of languages"><a href="#">{{item}}</a></li>
         </ul>
     </div>
-</div>
+</ng-template>
