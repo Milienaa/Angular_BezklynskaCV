@@ -1,0 +1,20 @@
+<div class="sidebar">
+    <div class="contact">
+        <h3>Contact</h3>
+        <ul class="contact__menu">
+            <li *ngFor="let item of contact"><a href="{{item.src}}">{{item.text}}</a></li>
+        </ul>
+    </div>
+    <div class="skills">
+        <h3>Skills</h3>
+        <ul class="skills__menu">
+            <li *ngFor="let item of skills"><a href="#">{{item}}</a></li>
+        </ul>
+    </div>
+    <div class="languages">
+        <h3>Languages</h3>
+        <ul class="languages__menu">
+            <li *ngFor="let item of languages">{{item}}<a href="#"></a></li>
+        </ul>
+    </div>
+</div>

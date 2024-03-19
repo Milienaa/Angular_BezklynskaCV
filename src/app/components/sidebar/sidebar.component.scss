@@ -1,0 +1,28 @@
+.sidebar {
+    padding: 20px 10px;
+    background-color: #7094f775;
+
+    ul {
+        padding: 5px;
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    .contact__menu {
+        list-style-type: none;
+    }
+
+    .skills__menu, .languages__menu {
+        list-style-position: inside;
+        a {
+            cursor: auto;
+        }
+    }
+}
